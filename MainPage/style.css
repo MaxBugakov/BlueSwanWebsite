@@ -61,7 +61,7 @@ html {
 .slider-wrapper {
     margin-top: 200px;
     width: 100%;
-    height: 500px;
+    height: 700px;
     margin: 0 auto;
 }
 
@@ -89,7 +89,6 @@ html {
 
 
 .text-before-pcs {
-    /* width: 1100px; */
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 50px;
@@ -99,9 +98,8 @@ html {
 .text-before-pcs h3 {
     font-family: 'Montserrat', sans-serif;
     color: white;
-    text-shadow: 0px 0px 2px white;
     letter-spacing: 2px;
-    line-height: 33px;
+    line-height: 35px;
 }
 
 
@@ -109,35 +107,68 @@ html {
     width: 100%;
     padding: 40px;
     box-sizing: border-box;
+    max-width: 1400px;
+    margin: 0 auto;
 }
+
 .cards-container {
-    width: 100%;
+    width: fit-content;
     /* background-color: red; */
     display: grid;
     box-sizing: border-box;
     margin: 0 auto;
     grid-template-columns: repeat(3, 1fr); /* создает три столбца с одинаковой шириной */
-    grid-gap: 40px; 
+    grid-gap: 40px;
 }
 
-@keyframes shadow-color-change {
+@keyframes shadow-color-change-1 {
     0% {
-      box-shadow: 0px 0px 15px 0px rgb(2,218,222); /* Blue */
+      box-shadow: 0px 0px 15px 0px rgb(2,218,222); 
     }
     33% {
-      box-shadow: 0px 0px 15px 0px rgb(119,115,238); /* Red */
+      box-shadow: 0px 0px 15px 0px rgb(119,115,238);
     }
     66% {
-      box-shadow: 0px 0px 15px 0px rgb(249,3,255); /* Green */
+      box-shadow: 0px 0px 15px 0px rgb(249,3,255); 
     }
     100% {
-      box-shadow: 0px 0px 15px 0px rgb(2,218,222); /* Blue */
+      box-shadow: 0px 0px 15px 0px rgb(2,218,222); 
+    }   
+}
+
+@keyframes shadow-color-change-2 {
+    0% {
+        box-shadow: 0px 0px 15px 0px rgb(119,115,238); 
+    }
+    33% {
+        box-shadow: 0px 0px 15px 0px rgb(249,3,255);
+    }
+    66% {
+        box-shadow: 0px 0px 15px 0px rgb(2,218,222);
+    }
+    100% {
+        box-shadow: 0px 0px 15px 0px rgb(119,115,238);
+    }   
+}
+
+@keyframes shadow-color-change-3 {
+    0% {
+        box-shadow: 0px 0px 15px 0px rgb(249,3,255);
+    }
+    33% {
+        box-shadow: 0px 0px 15px 0px rgb(2,218,222); 
+    }
+    66% {
+        box-shadow: 0px 0px 15px 0px rgb(119,115,238); 
+    }
+    100% {
+        box-shadow: 0px 0px 15px 0px rgb(249,3,255); 
     }   
 }
 
 
 .card {
-    width: 100%;
+    width: 380px;
     height: 580px;
     background-color: #030824;
     /* margin: 10px; */
@@ -145,10 +176,19 @@ html {
     transition: 0.2s;
     cursor: pointer;
     /* box-shadow: 0px 0px 15px 0px #3891FD; */
-    animation: shadow-color-change 3s infinite;
+    
 }
 .card:hover {
     transform: scale(1.05);
+}
+.card-light-mode-1 {
+    animation: shadow-color-change-1 6s infinite;
+}
+.card-light-mode-2 {
+    animation: shadow-color-change-2 6s infinite;
+}
+.card-light-mode-3 {
+    animation: shadow-color-change-3 6s infinite;
 }
 
 .card__img {
@@ -257,24 +297,24 @@ html {
     display: grid;
     box-sizing: border-box;
     margin: 0 auto;
-    grid-template-columns: repeat(2, 1fr); /* создает три столбца с одинаковой шириной */
+    grid-template-columns: repeat(3, 1fr); /* создает три столбца с одинаковой шириной */
     grid-gap: 30px; 
 }
 .card-advantage {
     width: 450px;
-    height: 200px;
+    height: 250px;
     background-color: #000231;
     margin: 20px;
     display: flex;
     border-radius: 20px;
     overflow: hidden;
 }
-.card-advantage:nth-child(1) {
+/* .card-advantage:nth-child(1) {
     margin-top: 0;
 }
 .card-advantage:nth-child(2) {
     margin-top: 0;
-}
+} */
 .card-advantage__img {
     width: 60px;
     height: 60px;
@@ -286,6 +326,10 @@ html {
     background-size: 100%;
     background-image: url(../static/star_ico.png);
     position: relative;
+    z-index: 100;
+}
+.card-advantage-wrapper .card-advantage:nth-child(1) .card-advantage__img {
+    background-image: url(../static/advanture_1.png);
 }
 
 .card-advantage__img::before {
@@ -299,6 +343,7 @@ html {
     left: -80%;
     background: radial-gradient(circle, rgb(2,218,222, 0.3), transparent);
     filter: blur(16px);
+    z-index: -2;
 }
 
 .card-advantage__info-wrapper {
@@ -319,6 +364,7 @@ html {
 }
 .card-advantage__text {
     font-size: 18px;
+    text-wrap: balance;
 }
 
 

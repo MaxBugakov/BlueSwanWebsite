@@ -1,0 +1,26 @@
+@media screen and (max-width: 1440px) {
+    .slider-wrapper {
+        height: 600px;
+    }
+}
+@media screen and (max-width: 1330px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0px;
+    }
+    .card {
+        margin: 0 30px 60px 30px;
+    }
+    .slider-wrapper {
+        height: 500px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    
+}
+@media screen and (max-width: 786px) {
+    
+}
+@media screen and (max-width: 425px) {
+    
+}
