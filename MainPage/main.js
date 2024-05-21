@@ -9,8 +9,22 @@ $(document).ready(function(){
     $('.feedback-slider').slick({
         infinite: true,
         slidesToShow: 3,
-        slidesToScroll: 1
-      });
+        slidesToScroll: 1,
+        responsive: [
+            {
+              breakpoint: 1550,
+              settings: {
+                slidesToShow: 2
+              }
+            }
+        ]
+    });
+
+    $('.card').on("click", function() {
+        $('html,body').animate({
+            scrollTop: $(".feedback-more-button-wrapper").offset().top},
+            'slow');
+    });
 });
 
 
