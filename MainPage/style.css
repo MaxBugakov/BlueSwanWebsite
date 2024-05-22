@@ -207,18 +207,20 @@ html {
 }
 .cards-container .card:nth-child(2) .card__img {
     background-image: url(../static/PC/pc2.png);
+    background-size: 80%;
 }
 .cards-container .card:nth-child(3) .card__img {
     background-image: url(../static/PC/pc5.png);
+    background-size: 80%;
 }
 .cards-container .card:nth-child(4) .card__img {
     background-image: url(../static/PC/pc6.png);
 }
 .cards-container .card:nth-child(5) .card__img {
-    background-image: url(../static/PC/pc10.png);
+    background-image: url(../static/PC/pc7.png);
 }
 .cards-container .card:nth-child(6) .card__img {
-    background-image: url(../static/PC/pc11.png);
+    background-image: url(../static/PC/pc10.png);
 }
 
 .card__main-info-wrapper {
