@@ -3,7 +3,8 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 1500,
+        arrows: false
     });
 
     $('.feedback-slider').slick({
@@ -14,7 +15,7 @@ $(document).ready(function(){
             {
               breakpoint: 1550,
               settings: {
-                slidesToShow: 2
+                slidesToShow: 2,
               }
             }
         ]
