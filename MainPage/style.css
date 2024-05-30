@@ -310,8 +310,10 @@ html {
     font-size: 24px;
     display: flex;
     justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 60px 0px 20px;
+}
+.h2-main h2 {
+    margin: 0;
 }
 
 .card-advantage-wrapper {
@@ -393,7 +395,7 @@ html {
 }
 
 .card-advantage__info-wrapper {
-    width: 330px;
+    width: fit-content;
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
@@ -408,6 +410,7 @@ html {
     -webkit-text-fill-color: transparent;
     color: #0B2349;
 }
+
 .card-advantage__text {
     font-size: 18px;
     text-wrap: balance;
@@ -643,7 +646,7 @@ textarea {
     width: 100%;
     max-width: 1000px;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 .footer__double-ul ul {
     margin: 0;
