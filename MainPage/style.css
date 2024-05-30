@@ -706,11 +706,6 @@ textarea {
 
 
 
-
-
-body {
-    position: relative;
-}
 .pop-up-menu {
     width: 100%;
     height: calc(100vh - 70px);
@@ -719,11 +714,14 @@ body {
     top: 100%;
     left: 0;
     z-index: 10000;
-    display: none;
+    /* display: none; */
+    top: -110vh;
+    transition: 0.5s;
+    z-index: -1;
 }
 .open-menu {
-    z-index: 10000;
     display: block;
+    top: 100%;
 }
 .pop-up-menu__menu {
     width: 100%;
