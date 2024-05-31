@@ -1,0 +1,248 @@
+@media screen and (max-width: 1550px) {
+    .slider-wrapper {
+        height: 600px;
+    }
+    .card-advantage-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .feedback-slider__item__img {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .slider-wrapper {
+        height: 600px;
+    }
+}
+@media screen and (max-width: 1330px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0px;
+    }
+    
+    .card {
+        margin: 0 30px 60px 30px;
+    }
+    .slider-wrapper {
+        height: 500px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    
+}
+@media screen and (max-width: 786px) {
+    
+}
+@media screen and (max-width: 460px) {
+    .slider-wrapper {
+        height: 500px;
+    }
+    .text-before-pcs {
+        margin-top: 70px;
+        margin-bottom: 50px;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .text-before-pcs h3 {
+        line-height: 30px;
+    }
+    .cards-container-wrapper {
+        padding: 0;
+    }
+    .cards-container {
+        width: 100%;
+        display: grid;
+        box-sizing: border-box;
+        margin: 0 auto;
+        grid-template-columns: repeat(1, 1fr); /* создает три столбца с одинаковой шириной */
+        grid-gap: 0px;
+        padding: 0px 30px;
+    }
+    .cards-container .card:nth-child(1) .card__img {
+        background-image: url(../static/PC/pc1.png);
+    }
+    .cards-container .card:nth-child(2) .card__img {
+        background-image: url(../static/PC/pc2.png);
+        background-size: 90%;
+    }
+    .cards-container .card:nth-child(3) .card__img {
+        background-image: url(../static/PC/pc5.png);
+        background-size: 90%;
+    }
+    .cards-container .card:nth-child(4) .card__img {
+        background-image: url(../static/PC/pc6.png);
+        background-size: 80%;
+    }
+    .cards-container .card:nth-child(5) .card__img {
+        background-image: url(../static/PC/pc7.png);
+        background-size: 80%;
+    }
+    .cards-container .card:nth-child(6) .card__img {
+        background-image: url(../static/PC/pc10.png);
+        background-size: 80%;
+    }
+    .card {
+        width: 100%;
+        height: 570px;
+        background-color: #030824;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    
+    .card__img {
+        width: calc(100% - 40px);
+        height: 270px;
+        background-size: 90%;
+    }
+    .card-advantage-wrapper {
+        width: 100%;
+        /* background-color: red; */
+        display: grid;
+        box-sizing: border-box;
+        margin: 0 auto;
+        grid-template-columns: repeat(1, 1fr); /* создает три столбца с одинаковой шириной */
+        /* grid-gap: 30px;  */
+    }
+    .card__title {
+        width: 150px;
+    }
+    .h2-main {
+        line-height: 30px;
+        font-size: 18px;
+        text-align: center;
+    }
+    .card-advantage-wrapper {
+        padding: 20px
+    }
+    .card-advantage {
+        width: 100%;
+        height: fit-content;
+        background-color: #000231;
+        margin: 0px;
+        display: flex;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .card-advantage__img {
+        width: 50px;
+        height: 50px;
+        /* background-color: red; */
+      
+        margin: 15px;
+        margin-top: 7px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-image: url(../static/advanture_2.png);
+        position: relative;
+        z-index: 100;
+    }
+    .card-advantage__text {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .card-advantage__title {
+        font-size: 18px;
+        margin-top: 20px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .card-advantage__img::before {
+        top: -112%;
+        left: -130%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .feedback-slider-wrapper {
+        width: 100%;
+        height: fit-content;
+        /* background-color: red; */
+    }
+    .feedback-slider__item {
+        width: 500px;
+        height: calc(100% - 40px);
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .feedback-slider__item__img {
+        width: 100%;
+        height: 180px;
+        border-radius: 15px;
+        /* background-color: bisque; */
+        margin-left: 10px;
+        margin-right: 10px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .feedback-slider__info-wrapper {
+        width: 100%;
+        margin: 20px;
+        margin-bottom: 0;
+    }
+    .feedback-slider__item__name {
+        font-size: 22px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+    .feedback-slider__item__comment {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    .feedback-more-button {
+        margin-top: 0;
+        padding: 10px 30px;
+    }
+    form {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+
+    /* ----------------------------- */
+
+    .h2-main {
+        margin: 40px 0px;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    .text-before-pcs {
+        line-height: 20px;
+        margin-top: 0;
+        font-size: 16px;
+        padding: 0 10px;
+        text-wrap: balance;
+    }
+    .text-before-pcs h3 {
+        line-height: 25px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .card__title {
+        font-size: 20px;
+        width: 120px;
+    }
+    .card__price {
+        font-size: 20px;
+    }
+    .cards-container {
+        padding: 0px 15px;
+    }
+}
