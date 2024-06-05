@@ -5,14 +5,14 @@ $(document).ready(function(){
          if (click_menu_flag==false) {
              $('.pop-up-menu').addClass('open-menu');
              click_menu_flag=true;
-             $('html').css('overflow-y', 'hidden');
+             $('body').css('overflow', 'hidden');
              $('.header_burger-menu').css('background-image', 'url(../static/close_ico.png)');
              $('.header_burger-menu').css('background-size', '120%');
          }
          else {
              $('.pop-up-menu').removeClass('open-menu');
              click_menu_flag=false;
-             $('html').css('overflow-y', 'scroll');
+             $('body').css('overflow', 'scroll');
              $('.header_burger-menu').css('background-image', 'url(../static/burger_menu_icon.png)');
              $('.header_burger-menu').css('background-size', '100%');
          }
